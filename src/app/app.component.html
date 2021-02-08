@@ -2,19 +2,19 @@
   <mat-drawer #drawer class="sidenav" mode="side">
     <p class="nav-option" routerLink="">Home</p>
   
-    <p class="nav-option" routerLink="upload" (mouseover)="showUploadDescription = !showUploadDescription"  
+    <p class="nav-option" routerLink="upload" (click)="drawer.toggle()" (mouseover)="showUploadDescription = !showUploadDescription"  
               (mouseout)="showUploadDescription = !showUploadDescription" mat-raised-button>Upload</p>
     <p class="nav-description" *ngIf="showUploadDescription">Upload a picture of a leaf and let our AI tell you its condition.</p>
 
-    <p class="nav-option" routerLink="guide" (mouseover)="showGuideDescription = !showGuideDescription"  
+    <p class="nav-option" routerLink="guide" (click)="drawer.toggle()" (mouseover)="showGuideDescription = !showGuideDescription"  
     (mouseout)="showGuideDescription = !showGuideDescription" mat-raised-button> Guide</p>
     <p class="nav-description" *ngIf="showGuideDescription">New User? Follow our guide to use our plateform efficiently</p>
 
-    <p class="nav-option" routerLink="ressources" (mouseover)="showRessourcesDescription = !showRessourcesDescription"  
+    <p class="nav-option" routerLink="ressources" (click)="drawer.toggle()" (mouseover)="showRessourcesDescription = !showRessourcesDescription"  
               (mouseout)="showRessourcesDescription = !showRessourcesDescription" mat-raised-button>Ressources</p>
     <p class="nav-description" *ngIf="showRessourcesDescription">Common ressources about plants diseases and treatments</p>
     
-    <p class="nav-option" routerLink="aboutus">About us</p>
+    <p class="nav-option" routerLink="aboutus" (click)="drawer.toggle()">About us</p>
   </mat-drawer>
   <div class="sidenav-content">
     <i class="fa fa-bars" mat-button (click)="drawer.toggle()"></i>

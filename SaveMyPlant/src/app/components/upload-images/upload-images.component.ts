@@ -31,14 +31,7 @@ export class LoadingComponent implements AfterViewInit {
   }
 
   onFileChanged(event){
-    console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-    // console.log(event.target)
-    // console.log(event)
-    // console.log(event.target.files[0]);
-    // let file = (event.target.files)[0];
-    // console.log(event);
     this.preview(event);
-
   }
 
   predict() {

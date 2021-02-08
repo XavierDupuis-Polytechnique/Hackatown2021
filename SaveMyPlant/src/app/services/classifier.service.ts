@@ -14,7 +14,7 @@ export class ClassifierService {
   }
 
   async loadModel() {
-    const path = "../../assets/model.json";
+    const path = "./assets/model.json";
     this.model = await tf.loadLayersModel(path);
   }
 
